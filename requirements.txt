@@ -1,0 +1,13 @@
+numpy
+pandas
+nbconvert
+matplotlib
+requests
+futures
+pandas-profiling
+# scikit-learn
+statsmodels
+streamlit
+seaborn
+plotly
+scipy
