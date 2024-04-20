@@ -7,14 +7,13 @@ import plotly.figure_factory as ff
 
 st.header('1. Altair Scatter Plot')
 chart_data = pd.DataFrame(np.random.randn(500,5), columns = ['a','b','c','d','e'])
-chart = alt.Chart(chart_data).mark_circle().encode(x = 'a' , y = 'b', size = 'c',
-        tooltip = ['a','b','c','d','e'])
+chart= alt.Chart(chart_data).mark_circle().encode(x='a' , y='b' , size = 'c', tooltip = ['a','b','c','d','e'])
 st.altair_chart(chart)
 
 
 st.header('2. Interactive Charts')
 st.subheader('2.1 Line Chart')
-df = pd.read_csv(r'C:\Users\Satyam\Desktop\Shubham_Notes\Data Science\Data Analytics\Streamlit\lang_data.csv')
+df = pd.read_csv(r'C:\Users\Satyam\Desktop\Data_Science\Data Analytics\Streamlit\lang_data.csv')
 lang_list = df.columns.tolist()
 lang_choices = st.multiselect('Choose your language', lang_list)
 new_df = df[lang_choices]
@@ -25,7 +24,7 @@ st.area_chart(new_df)
 
 st.header('3. Data Visualisation with Plotly')
 st.subheader('3.1 Displaying the dataset')
-df = pd.read_csv(r'C:\Users\Satyam\Desktop\Shubham_Notes\Data Science\Data Analytics\Streamlit\tips.csv')
+df = pd.read_csv(r'C:\Users\Satyam\Desktop\Data_Science\Data Analytics\Streamlit\tips.csv')
 st.dataframe(df.head())
 
 st.subheader('3.2 Pie Chart')
@@ -34,7 +33,7 @@ st.plotly_chart(fig)
 
 st.subheader('3.3 Pie Chart with Multiple Parameters')
 fig = px.pie(df, values = 'total_bill', names = 'day', opacity = .7,
-            color_discrete_sequence = px.colors.sequential.RdBu)
+    color_discrete_sequence = px.colors.sequential.RdBu, title = 'Tips Distribution')
 st.plotly_chart(fig)
 
 st.subheader('3.4 Histogram')

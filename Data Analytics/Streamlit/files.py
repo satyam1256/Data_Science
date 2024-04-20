@@ -6,12 +6,12 @@ st.subheader('UpLoading CSV Files : ')
 df = st.file_uploader('Upload your CSV file', type = ['csv' , 'xlsx'])
 
 st.subheader('Loading CSV Files : ')
-df = pd.read_csv(r"C:\Users\Satyam\Desktop\Shubham_Notes\Data Science\Data Analytics\Streamlit\Products.csv")
+df = pd.read_csv(r"C:\Users\Satyam\Desktop\Data_Science\Data Analytics\Streamlit\Products.csv")
 if df is not None:
-    st.table(df.head(5))
+    st.table(df.head(10))
 
 st.subheader('Dealing with Images Directly : ')
-st.image(r"C:\Users\Satyam\Desktop\Shubham_Notes\Data Science\Data Analytics\Streamlit\img.png")
+st.image(r"C:\Users\Satyam\Desktop\Data_Science\Data Analytics\Streamlit\img.png")
 
 st.subheader('Dealing with Images via Uploading : ')
 
