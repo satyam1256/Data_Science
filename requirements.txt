@@ -5,7 +5,8 @@ matplotlib
 requests
 futures
 pandas-profiling
-scikit-learn
+# scikit-learn
+scikit-learn==1.1.0
 statsmodels
 streamlit
 seaborn
