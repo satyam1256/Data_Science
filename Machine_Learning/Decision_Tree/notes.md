@@ -3,7 +3,8 @@
 ```
 
 
-Here's the content converted to Markdown:
+<h1 style="color: green;">RANDOM FOREST</h1>
+
 
 ---
 
@@ -78,5 +79,3 @@ regressor.fit(x, y)
 ![Random Forest Regressor](https://media.geeksforgeeks.org/wp-content/uploads/20190530103506/Screenshot-1502.png)
 
 ---
-
-This is the converted content in Markdown format.
